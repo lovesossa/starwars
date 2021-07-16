@@ -1,0 +1,25 @@
+//------------------------------------------------------------layout
+.header {
+	@extend %global_flex_block_row_wrap_flex-start_center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: $height_header;
+	width: 100%;
+	padding: 0 $gl_indent;
+
+	font-size: 1rem;
+
+	will-change: transform;
+
+	@include z-index(header);
+}
+
+.header_in {
+
+}
+
+
+//------------------------------------------------------------layout###

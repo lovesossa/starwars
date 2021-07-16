@@ -1,0 +1,14 @@
+include ../templates/_global_vars
+include ../templates/_project_vars
+include ../templates/_global_mixins
+include ../templates/_project_mixins
+
+block vars
+doctype
+html(lang="en")
+	head
+		+head(array)
+	body(class= array.body_class)
+		.root(class= array.layout_mod id='root')
+			block content_block
+		block local_popup
