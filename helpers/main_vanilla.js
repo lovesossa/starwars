@@ -8,21 +8,23 @@ var $ = function(selector) {
 					callback(event);
 				}
 			});
-		});  	
+		});
 	};
-	
+
 	result.removeClass = function(className) {
 		this.forEach(function(item) {
 			item.classList.remove(className);
-		}); 
+		});
 	};
-	
+
+	console.log('1');
+
 	result.addClass = function(className) {
 		this.forEach(function(item) {
 			item.classList.add(className);
 		});
 	};
-	
+
 	return result;
 };
 
